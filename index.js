@@ -42,3 +42,49 @@ let isRaining = true;
 // Jacket or no Jacket done
 
 // The Calculator started here
+
+let userName = '';
+let num1 = parseInt(prompt(`Please enter your first number:`));
+let num2 = parseInt(prompt(`Please enter your second number:`));
+let operation = prompt(`Please type a mathematical operator you would like to use, i.e. "add", "subtract", "multiply", "divide".`);
+
+// greeting = (userName) ? `Hello ${userName}!` : `Hello, guest!`; 
+// console.log(greeting);
+// if (operation === 'add') {
+//     sum = num1 + num2;
+//     console.log(`If you add ${num1} and ${num2}, you will receive: ${sum}.`);
+// } else if (operation === 'subtract') {
+//     subtract = num1 - num2;
+//     console.log(`If you subtract ${num1} by ${num2}, you will receive: ${subtract}.`);
+// } else if (operation === 'multiply') {
+//     multiply = num1 * num2;
+//     console.log(`If you multiply ${num1} by ${num2}, you will receive: ${multiply}.`);
+// } else if (operation === 'divide') {
+//     divide = num1 /num2;
+//     console.log(`If you divide ${num1} by ${num2}, you will receive: ${divide}.`);
+// } else {
+//     console.log(`Please enter either: "add", "subtract", "multiply", "divide".`);
+// }
+console.log(typeof num2, typeof num1, typeof operation);
+
+function  operationOutput(num1, num2, operation) {
+    greeting = (userName) ? `Hello ${userName}!` : `Hello, guest!`; 
+console.log(greeting);
+if (operation === 'add') {
+    sum = num1 + num2;
+    console.log(`If you add ${num1} and ${num2}, you will receive: ${sum}.`);
+} else if (operation === 'subtract') {
+    subtract = num1 - num2;
+    console.log(`If you subtract ${num1} by ${num2}, you will receive: ${subtract}.`);
+} else if (operation === 'multiply') {
+    multiply = num1 * num2;
+    console.log(`If you multiply ${num1} by ${num2}, you will receive: ${multiply}.`);
+} else if (operation === 'divide') {
+    divide = num1 /num2;
+    console.log(`If you divide ${num1} by ${num2}, you will receive: ${divide}.`);
+} else {
+    console.log(`Please enter either: "add", "subtract", "multiply", "divide".`);
+
+}
+}
+operationOutput(num1, num2, operation)
