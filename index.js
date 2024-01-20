@@ -67,7 +67,7 @@ let operation = prompt(`Please type a mathematical operator you would like to us
 // }
 console.log(typeof num2, typeof num1, typeof operation);
 
-function  operationOutput(num1, num2, operation) {
+function operationOutput(num1, num2, operation) {
     greeting = (userName) ? `Hello ${userName}!` : `Hello, guest!`; 
 console.log(greeting);
 if (operation === 'add') {
@@ -80,11 +80,13 @@ if (operation === 'add') {
     multiply = num1 * num2;
     console.log(`If you multiply ${num1} by ${num2}, you will receive: ${multiply}.`);
 } else if (operation === 'divide') {
-    divide = num1 /num2;
+    divide = num1 / num2;
     console.log(`If you divide ${num1} by ${num2}, you will receive: ${divide}.`);
 } else {
     console.log(`Please enter either: "add", "subtract", "multiply", "divide".`);
 
+  }
 }
-}
+
+
 operationOutput(num1, num2, operation)
